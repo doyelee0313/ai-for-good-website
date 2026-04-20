@@ -1,6 +1,21 @@
 import { Badge } from "@/components/ui/badge"
 import Image from "next/image"
 
+const partners = [
+  "ASEAN Foundation",
+  "Google.org",
+  "IMDA",
+  "AVPN",
+  "ADB",
+  "Meta",
+  "Micron Foundation",
+  "AWS",
+  "UNDP",
+  "Singapore Youth AI",
+  "National Youth Council",
+  "MUIS",
+]
+
 export function PartnersSection() {
   return (
     <section id="partners" className="py-24">
@@ -17,16 +32,33 @@ export function PartnersSection() {
         </div>
 
         {/* Ecosystem Illustration */}
-        <div className="relative w-full max-w-4xl mx-auto">
+        <div className="relative w-full max-w-4xl mx-auto mb-16">
           <div className="relative aspect-[3/2] w-full">
             <Image
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/colla%20white-KthkPr8nsctFttKcAODAeIAx7mfOwv.png"
-              alt="AI for Good collaborative ecosystem showing partners: ASEAN Foundation, Google.org, IMDA, AVPN, ADB, Meta, Micron Foundation, AWS, UNDP, Singapore Youth AI, National Youth Council, and MUIS radiating from the AI for Good logo"
+              alt="AI for Good collaborative ecosystem showing partners radiating from the AI for Good logo"
               fill
               className="object-contain"
               priority
             />
           </div>
+        </div>
+
+        {/* Partner Grid */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+          {partners.map((partner) => (
+            <div
+              key={partner}
+              className="p-4 rounded-xl bg-secondary/50 border border-border hover:bg-secondary hover:border-primary/20 transition-all text-center"
+            >
+              <div className="w-10 h-10 mx-auto rounded-lg bg-primary/10 flex items-center justify-center mb-3">
+                <span className="text-sm font-bold text-primary">
+                  {partner.split(" ").map(w => w[0]).join("").slice(0, 2)}
+                </span>
+              </div>
+              <h3 className="text-sm font-medium text-foreground">{partner}</h3>
+            </div>
+          ))}
         </div>
       </div>
     </section>
