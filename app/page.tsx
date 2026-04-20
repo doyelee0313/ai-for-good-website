@@ -15,7 +15,6 @@ import { Footer } from "@/components/footer"
 export default function AIForGoodPage() {
   return (
     <main className="min-h-screen">
-      <Navigation />
       <HeroSection />
       <AboutSection />
       <AIEraSection />
@@ -27,7 +26,6 @@ export default function AIForGoodPage() {
       <PartnersSection />
       <CollaborationSection />
       <ContactSection />
-      <Footer />
     </main>
   )
 }
