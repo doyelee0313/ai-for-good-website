@@ -5,32 +5,32 @@ const stages = [
   {
     title: "Problem / Need",
     content: "Uneven access to AI capabilities, with varying levels of readiness across communities, sectors, and markets",
-    color: "bg-red-500/20 border-red-500/30",
+    color: "bg-red-600/15 border-red-600/30",
   },
   {
     title: "Inputs",
     content: "Cross-sector partnerships, Funding & resources, AI expertise, Platforms, tools, and networks",
-    color: "bg-orange-500/20 border-orange-500/30",
+    color: "bg-red-500/15 border-red-500/30",
   },
   {
     title: "Activities",
     content: "A portfolio of AI for Good initiatives across: Education, Workforce development, Community programmes, Ecosystem & policy engagement",
-    color: "bg-yellow-500/20 border-yellow-500/30",
+    color: "bg-orange-500/15 border-orange-500/30",
   },
   {
     title: "Outputs",
     content: "Programmes delivered across markets, Educators, trainers, and facilitators enabled, Learners, workers, and communities reached at scale",
-    color: "bg-green-500/20 border-green-500/30",
+    color: "bg-orange-400/15 border-orange-400/30",
   },
   {
     title: "Outcomes",
     content: "Build AI literacy, fluency, and practical application, Strengthen employability and productivity, Engage with AI responsibly and safely",
-    color: "bg-primary/20 border-primary/30",
+    color: "bg-amber-500/15 border-amber-500/30",
   },
   {
     title: "Impact",
     content: "Inclusive participation in the AI-enabled economy, Expanded access to opportunities, Future-ready workforce and communities",
-    color: "bg-primary/30 border-primary/50",
+    color: "bg-amber-400/15 border-amber-400/30",
   },
 ]
 

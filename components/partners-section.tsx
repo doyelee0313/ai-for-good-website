@@ -40,11 +40,11 @@ export function PartnersSection() {
               className="inline-flex items-center gap-2 text-sm text-muted-foreground"
             >
               <span className={`w-3 h-3 rounded-full ${
-                category === "Technology" ? "bg-blue-500" :
-                category === "Government" ? "bg-green-500" :
-                category === "Multilateral" ? "bg-purple-500" :
-                category === "Philanthropy" ? "bg-orange-500" :
-                "bg-pink-500"
+                category === "Technology" ? "bg-red-500" :
+                category === "Government" ? "bg-orange-500" :
+                category === "Multilateral" ? "bg-amber-500" :
+                category === "Philanthropy" ? "bg-orange-600" :
+                "bg-red-400"
               }`} />
               {category}
             </span>
@@ -59,18 +59,18 @@ export function PartnersSection() {
               className="group p-6 bg-card rounded-2xl border border-border hover:border-primary/50 transition-all text-center"
             >
               <div className={`w-12 h-12 mx-auto rounded-xl flex items-center justify-center mb-4 ${
-                partner.category === "Technology" ? "bg-blue-500/10" :
-                partner.category === "Government" ? "bg-green-500/10" :
-                partner.category === "Multilateral" ? "bg-purple-500/10" :
-                partner.category === "Philanthropy" ? "bg-orange-500/10" :
-                "bg-pink-500/10"
+                partner.category === "Technology" ? "bg-red-500/10" :
+                partner.category === "Government" ? "bg-orange-500/10" :
+                partner.category === "Multilateral" ? "bg-amber-500/10" :
+                partner.category === "Philanthropy" ? "bg-orange-600/10" :
+                "bg-red-400/10"
               }`}>
                 <span className={`text-lg font-bold ${
-                  partner.category === "Technology" ? "text-blue-500" :
-                  partner.category === "Government" ? "text-green-500" :
-                  partner.category === "Multilateral" ? "text-purple-500" :
-                  partner.category === "Philanthropy" ? "text-orange-500" :
-                  "text-pink-500"
+                  partner.category === "Technology" ? "text-red-500" :
+                  partner.category === "Government" ? "text-orange-500" :
+                  partner.category === "Multilateral" ? "text-amber-500" :
+                  partner.category === "Philanthropy" ? "text-orange-600" :
+                  "text-red-400"
                 }`}>
                   {partner.name.split(" ").map(w => w[0]).join("").slice(0, 2)}
                 </span>
