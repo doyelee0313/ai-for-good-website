@@ -2,86 +2,105 @@ import Link from "next/link"
 
 export function Footer() {
   return (
-    <footer className="bg-card border-t border-border py-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-4 gap-8 mb-8">
-          <div className="md:col-span-2">
-            <Link href="/" className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-sm">AI</span>
+    <footer className="bg-foreground text-background py-12">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid md:grid-cols-3 gap-8 mb-8">
+          <div>
+            <Link href="/" className="flex items-center gap-3 mb-4">
+              <div className="flex items-center gap-1">
+                <div className="w-2 h-6 bg-primary rounded-sm" />
+                <div className="w-2 h-6 bg-accent rounded-sm" />
+                <div className="w-2 h-6 bg-primary/70 rounded-sm" />
               </div>
-              <span className="font-semibold text-foreground">AI Singapore</span>
+              <div className="flex flex-col">
+                <span className="font-bold text-background text-sm leading-tight">AI Singapore</span>
+                <span className="text-xs text-background/60 leading-tight">AI for Good</span>
+              </div>
             </Link>
-            <p className="text-sm text-muted-foreground max-w-md">
-              Singapore&apos;s national AI programme, dedicated to building deep national capabilities in AI,
-              creating social and economic impacts, and putting Singapore on the world map.
+            <p className="text-sm text-background/70 max-w-xs">
+              Bridging the digital divide through inclusive AI education across Southeast Asia and beyond.
             </p>
           </div>
 
           <div>
-            <h4 className="font-semibold text-foreground mb-4">Quick Links</h4>
+            <h4 className="font-semibold text-background mb-4">Quick Links</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="#about" className="text-muted-foreground hover:text-foreground transition-colors">
-                  About
+                <Link href="#mission" className="text-background/70 hover:text-background transition-colors">
+                  Our Mission
                 </Link>
               </li>
               <li>
-                <Link href="#pillars" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Pillars
+                <Link href="#goals" className="text-background/70 hover:text-background transition-colors">
+                  Our Goals
                 </Link>
               </li>
               <li>
-                <Link href="#programs" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Programs
+                <Link href="#initiatives" className="text-background/70 hover:text-background transition-colors">
+                  Initiatives
                 </Link>
               </li>
               <li>
-                <Link href="#partners" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Partners
+                <Link href="#contact" className="text-background/70 hover:text-background transition-colors">
+                  Contact
                 </Link>
               </li>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-semibold text-foreground mb-4">Resources</h4>
+            <h4 className="font-semibold text-background mb-4">Resources</h4>
             <ul className="space-y-2 text-sm">
               <li>
                 <a
-                  href="https://www.aisingapore.org"
+                  href="https://aisingapore.org"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-muted-foreground hover:text-foreground transition-colors"
+                  className="text-background/70 hover:text-background transition-colors"
                 >
                   AI Singapore
                 </a>
               </li>
               <li>
                 <a
-                  href="https://www.smartnation.gov.sg/initiatives/national-ai-strategy/"
+                  href="https://aisingapore.org/talent/ai-ready-asean/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-muted-foreground hover:text-foreground transition-colors"
+                  className="text-background/70 hover:text-background transition-colors"
                 >
-                  National AI Strategy
+                  AI Ready ASEAN
                 </a>
               </li>
               <li>
-                <Link href="#contact" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Contact Us
-                </Link>
+                <a
+                  href="https://aisingapore.org/talent/ai-for-good-educator/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-background/70 hover:text-background transition-colors"
+                >
+                  AI for Good (Educator)
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://aifundamentals.aisingapore.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-background/70 hover:text-background transition-colors"
+                >
+                  AI Opportunity Fund
+                </a>
               </li>
             </ul>
           </div>
         </div>
 
-        <div className="pt-8 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-muted-foreground">
+        <div className="pt-8 border-t border-background/20 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <p className="text-sm text-background/60">
             &copy; {new Date().getFullYear()} AI Singapore. All rights reserved.
           </p>
-          <p className="text-sm text-muted-foreground">
-            AI for the Public Good — for Singapore and the World
+          <p className="text-sm text-background/60">
+            AI for the Public Good
           </p>
         </div>
       </div>
