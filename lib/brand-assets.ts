@@ -6,7 +6,7 @@ export const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ?? "https://aiforgood.aisingapore.org";
 
 /** Public URL for metadata, favicon, and static image paths. */
-export const AI4G_LOGO_PATH = "/ai4g-logo.png";
+export const AI4G_LOGO_PATH = "https://aiforgood.aisingapore.org/og-image.png"
 
 export const AI4G_LOGO_ALT = "AI for Good Logo";
 
