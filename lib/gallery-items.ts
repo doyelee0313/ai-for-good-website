@@ -1,4 +1,5 @@
 import type { StaticImageData } from "next/image";
+import { AI4G_LOGO_PATH } from "@/lib/brand-assets";
 
 export type GalleryRevealVariant =
   | "reveal"
@@ -27,37 +28,37 @@ export const galleryItems: GalleryItem[] = [
     minHeightClass: "min-h-[260px] sm:min-h-[320px]",
   },
   {
-    src: "/placeholder.jpg",
-    alt: "Community learning session",
+    src: AI4G_LOGO_PATH,
+    alt: "AI for Good logo",
     caption: "Inclusive AI literacy",
     reveal: "reveal-right",
     layout: "lg:col-span-4",
   },
   {
-    src: "/placeholder-user.jpg",
-    alt: "Participants in a workshop",
+    src: AI4G_LOGO_PATH,
+    alt: "AI for Good logo",
     caption: "Trainings & workshops",
     reveal: "reveal-left",
     layout: "lg:col-span-4",
   },
   {
-    src: "/placeholder.jpg",
-    alt: "Youth and educators at an AI literacy event",
+    src: AI4G_LOGO_PATH,
+    alt: "AI for Good logo",
     caption: "Youth-led learning",
     reveal: "reveal",
     layout: "lg:col-span-4",
   },
   {
-    src: "/placeholder-logo.png",
-    alt: "Organisations collaborating on AI for Good",
+    src: AI4G_LOGO_PATH,
+    alt: "AI for Good logo",
     caption: "Alliance & partners",
     reveal: "reveal-right",
     layout: "lg:col-span-6",
     minHeightClass: "min-h-[200px]",
   },
   {
-    src: "/placeholder.svg",
-    alt: "Programme highlight imagery",
+    src: AI4G_LOGO_PATH,
+    alt: "AI for Good logo",
     caption: "Momentum for good",
     reveal: "reveal-scale",
     layout: "lg:col-span-6",

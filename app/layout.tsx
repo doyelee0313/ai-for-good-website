@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
-import { AI4G_LOGO_ALT, AI4G_LOGO_PATH, SITE_URL } from "@/lib/brand-assets";
+import { AI4G_LOGO_ALT, AI4G_LOGO_PATH, SITE_URL } from "../lib/brand-assets";
 import "./globals.css";
 
 const _geist = Geist({ subsets: ["latin"] });
